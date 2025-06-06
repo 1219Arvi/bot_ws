@@ -1,0 +1,50 @@
+[0.261s] Invoking command in '/home/arvi/bot_ws/build/bot': /usr/bin/cmake --build /home/arvi/bot_ws/build/bot -- -j16 -l16
+[8.145s] [ 14%] Built target example_tricycle_drive
+[8.146s] [ 42%] Built target example_velocity
+[8.147s] [ 42%] Built target example_gripper
+[8.148s] [ 57%] Built target example_effort
+[8.148s] [ 85%] Built target example_position
+[8.159s] [ 85%] Built target example_position_pid
+[8.164s] [100%] Built target example_diff_drive
+[8.166s] Invoked command in '/home/arvi/bot_ws/build/bot' returned '0': /usr/bin/cmake --build /home/arvi/bot_ws/build/bot -- -j16 -l16
+[8.248s] Invoking command in '/home/arvi/bot_ws/build/bot': /usr/bin/cmake --install /home/arvi/bot_ws/build/bot
+[8.307s] -- Install configuration: ""
+[8.308s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch
+[8.316s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch/diff_drive.launch.py
+[8.317s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch/camera.launch.py
+[8.318s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//config
+[8.320s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//config/diff_drive_controller.yaml
+[8.321s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf
+[8.321s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.urdf
+[8.322s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.gazebo
+[8.323s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/out.urdf
+[8.324s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/materials.xacro
+[8.325s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/depth_camera.xacro
+[8.327s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.trans
+[8.335s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.xacro
+[8.336s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//worlds
+[8.337s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//worlds/obstacles.world
+[8.338s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//worlds/empty.world
+[8.339s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_position
+[8.340s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_position_pid
+[8.340s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_velocity
+[8.341s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_effort
+[8.341s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_diff_drive
+[8.341s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_tricycle_drive
+[8.342s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_gripper
+[8.342s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/ament_index/resource_index/package_run_dependencies/bot
+[8.343s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/ament_index/resource_index/parent_prefix_path/bot
+[8.344s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/ament_prefix_path.sh
+[8.344s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/ament_prefix_path.dsv
+[8.345s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/path.sh
+[8.346s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/path.dsv
+[8.348s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.bash
+[8.348s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.sh
+[8.348s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.zsh
+[8.357s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.dsv
+[8.358s] -- Installing: /home/arvi/bot_ws/install/bot/share/bot/package.dsv
+[8.358s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/ament_index/resource_index/packages/bot
+[8.361s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/cmake/botConfig.cmake
+[8.362s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/cmake/botConfig-version.cmake
+[8.362s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/package.xml
+[8.363s] Invoked command in '/home/arvi/bot_ws/build/bot' returned '0': /usr/bin/cmake --install /home/arvi/bot_ws/build/bot

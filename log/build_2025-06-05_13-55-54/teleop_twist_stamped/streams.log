@@ -1,0 +1,21 @@
+[0.559s] Invoking command in '/home/arvi/bot_ws/src/teleop_twist_stamped': PYTHONPATH=/home/arvi/bot_ws/build/teleop_twist_stamped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_twist_stamped build --build-base /home/arvi/bot_ws/build/teleop_twist_stamped/build install --record /home/arvi/bot_ws/build/teleop_twist_stamped/install.log --single-version-externally-managed install_data
+[0.710s] running egg_info
+[0.710s] writing ../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/PKG-INFO
+[0.710s] writing dependency_links to ../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/dependency_links.txt
+[0.710s] writing entry points to ../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/entry_points.txt
+[0.710s] writing requirements to ../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/requires.txt
+[0.711s] writing top-level names to ../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/top_level.txt
+[0.711s] reading manifest file '../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/SOURCES.txt'
+[0.712s] writing manifest file '../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info/SOURCES.txt'
+[0.712s] running build
+[0.713s] running build_py
+[0.713s] running install
+[0.713s] running install_lib
+[0.714s] running install_data
+[0.714s] running install_egg_info
+[0.715s] removing '/home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages/teleop_twist_stamped-0.0.0-py3.10.egg-info' (and everything under it)
+[0.715s] Copying ../../build/teleop_twist_stamped/teleop_twist_stamped.egg-info to /home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages/teleop_twist_stamped-0.0.0-py3.10.egg-info
+[0.715s] running install_scripts
+[0.733s] Installing teleop_twist_stamped_keyboard script to /home/arvi/bot_ws/install/teleop_twist_stamped/lib/teleop_twist_stamped
+[0.733s] writing list of installed files to '/home/arvi/bot_ws/build/teleop_twist_stamped/install.log'
+[0.751s] Invoked command in '/home/arvi/bot_ws/src/teleop_twist_stamped' returned '0': PYTHONPATH=/home/arvi/bot_ws/build/teleop_twist_stamped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_twist_stamped build --build-base /home/arvi/bot_ws/build/teleop_twist_stamped/build install --record /home/arvi/bot_ws/build/teleop_twist_stamped/install.log --single-version-externally-managed install_data
