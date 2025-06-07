@@ -24,7 +24,7 @@ meshes/claw_link_1.stl
 meshes/elbow_link_1.stl
 meshes/forearm_link_1.stl
 meshes/left_wheel_link_2.stl
-meshes/realsense_DCAM_1.stl
+meshes/realsense_link.stl
 meshes/right_wheel_link_1.stl
 meshes/shoulder_link__1.stl
 meshes/tool_link_1.stl

@@ -1,0 +1,52 @@
+[0.132s] Invoking command in '/home/arvi/bot_ws/build/bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arvi/bot_ws/build/bot -- -j16 -l16
+[2.963s] [ 14%] Built target example_gripper
+[2.965s] [ 35%] Built target example_velocity
+[2.967s] [ 42%] Built target example_position_pid
+[2.968s] [ 57%] Built target example_effort
+[2.969s] [ 71%] Built target example_tricycle_drive
+[2.972s] [ 85%] Built target example_position
+[2.973s] [100%] Built target example_diff_drive
+[4.311s] Invoked command in '/home/arvi/bot_ws/build/bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arvi/bot_ws/build/bot -- -j16 -l16
+[4.337s] Invoking command in '/home/arvi/bot_ws/build/bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arvi/bot_ws/build/bot
+[4.357s] -- Install configuration: ""
+[4.357s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch
+[4.358s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch/diff_drive.launch.py
+[4.358s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch/rviz.launch.py
+[4.359s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//launch/camera.launch.py
+[4.359s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//config
+[4.360s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//config/diff_drive_controller.yaml
+[4.360s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//config/rviz_confg.rviz
+[4.361s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf
+[4.361s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.urdf
+[4.362s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.gazebo
+[4.362s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/out.urdf
+[4.363s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/materials.xacro
+[4.363s] -- Installing: /home/arvi/bot_ws/install/bot/share/bot//urdf/depth_camera.xacro
+[4.363s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.trans
+[4.364s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//urdf/robot.xacro
+[4.364s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//worlds
+[4.364s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//worlds/obstacles.world
+[4.364s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot//worlds/empty.world
+[4.365s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_position
+[4.365s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_position_pid
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_velocity
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_effort
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_diff_drive
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_tricycle_drive
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/lib/bot/example_gripper
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/ament_index/resource_index/package_run_dependencies/bot
+[4.366s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/ament_index/resource_index/parent_prefix_path/bot
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/ament_prefix_path.sh
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/ament_prefix_path.dsv
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/path.sh
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/environment/path.dsv
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.bash
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.sh
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.zsh
+[4.367s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/local_setup.dsv
+[4.368s] -- Installing: /home/arvi/bot_ws/install/bot/share/bot/package.dsv
+[4.369s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/ament_index/resource_index/packages/bot
+[4.369s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/cmake/botConfig.cmake
+[4.369s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/cmake/botConfig-version.cmake
+[4.370s] -- Up-to-date: /home/arvi/bot_ws/install/bot/share/bot/package.xml
+[4.372s] Invoked command in '/home/arvi/bot_ws/build/bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arvi/bot_ws/build/bot

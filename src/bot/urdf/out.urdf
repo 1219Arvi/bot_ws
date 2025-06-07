@@ -238,7 +238,7 @@
     <mu2>0.2</mu2>
     <self_collide>true</self_collide>
   </gazebo>
-  <gazebo reference="realsense_DCAM_1">
+  <gazebo reference="realsense_link">
     <material>Gazebo/Silver</material>
     <mu1>0.2</mu1>
     <mu2>0.2</mu2>
@@ -386,7 +386,7 @@
         </clip>
       </camera>
       <plugin filename="libgazebo_ros_camera.so" name="camera_controller">
-        <frame_name>realsense_DCAM_1</frame_name>
+        <frame_name>realsense_link</frame_name>
         <min_depth>0.1</min_depth>
         <max_depth>100.0</max_depth>
       </plugin>
@@ -492,7 +492,7 @@
       </geometry>
     </collision>
   </link>
-  <link name="realsense_DCAM_1">
+  <link name="realsense_link">
     <inertial>
       <origin rpy="0 0 0" xyz="0.011657410142899255 -0.0011559566930996867 0.0010283014584634431"/>
       <mass value="0.03866336197375993"/>
@@ -501,14 +501,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.073593 0.005001 -0.950168"/>
       <geometry>
-        <mesh filename="file:///home/arvi/bot_ws/install/robot_description/share/robot_description/meshes/realsense_DCAM_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/arvi/bot_ws/install/robot_description/share/robot_description/meshes/realsense_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.073593 0.005001 -0.950168"/>
       <geometry>
-        <mesh filename="file:///home/arvi/bot_ws/install/robot_description/share/robot_description/meshes/realsense_DCAM_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/arvi/bot_ws/install/robot_description/share/robot_description/meshes/realsense_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -861,7 +861,7 @@
   <joint name="realsense_joint" type="fixed">
     <origin rpy="0 0 0" xyz="0.025437 -0.024846 0.048271"/>
     <parent link="vision_module_link_1"/>
-    <child link="realsense_DCAM_1"/>
+    <child link="realsense_link"/>
   </joint>
   <joint name="shoulder_joint" type="continuous">
     <origin rpy="0 0 0" xyz="-0.014115 -0.160026 0.802564"/>

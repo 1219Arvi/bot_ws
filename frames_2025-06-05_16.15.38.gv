@@ -1,6 +1,6 @@
 digraph G {
 "odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 50.222\nBuffer length: 4.5\nMost recent transform: 472.39\nOldest transform: 467.89\n"];
-"vision_module_link_1" -> "realsense_DCAM_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"vision_module_link_1" -> "realsense_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
 "camera_mount_link_1" -> "vision_module_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.227\nBuffer length: 4.4\nMost recent transform: 472.345\nOldest transform: 467.945\n"];
 "base_link" -> "camera_mount_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.227\nBuffer length: 4.4\nMost recent transform: 472.345\nOldest transform: 467.945\n"];
 "base_link" -> "castor1_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.227\nBuffer length: 4.4\nMost recent transform: 472.345\nOldest transform: 467.945\n"];

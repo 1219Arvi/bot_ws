@@ -45,7 +45,7 @@ copying meshes/castor2_link_1.stl -> /home/arvi/bot_ws/install/robot_description
 copying meshes/elbow_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
 copying meshes/castor3_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
 copying meshes/upper_arm_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
-copying meshes/realsense_DCAM_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
+copying meshes/realsense_link.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
 copying meshes/castor1_wheel_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
 copying meshes/castor4_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes
 copying meshes/forearm_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes

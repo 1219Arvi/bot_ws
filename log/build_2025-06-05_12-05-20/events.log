@@ -88,7 +88,7 @@
 [0.726619] (robot_description) StdoutLine: {'line': b'copying meshes/elbow_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
 [0.727198] (robot_description) StdoutLine: {'line': b'copying meshes/castor3_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
 [0.727400] (robot_description) StdoutLine: {'line': b'copying meshes/upper_arm_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
-[0.727835] (robot_description) StdoutLine: {'line': b'copying meshes/realsense_DCAM_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
+[0.727835] (robot_description) StdoutLine: {'line': b'copying meshes/realsense_link.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
 [0.729904] (robot_description) StdoutLine: {'line': b'copying meshes/castor1_wheel_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
 [0.730132] (robot_description) StdoutLine: {'line': b'copying meshes/castor4_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}
 [0.730340] (robot_description) StdoutLine: {'line': b'copying meshes/forearm_link_1.stl -> /home/arvi/bot_ws/install/robot_description/share/robot_description/meshes\n'}

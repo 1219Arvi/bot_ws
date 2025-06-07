@@ -109,7 +109,7 @@
   </collision>
 </link>
 
-<link name="realsense_DCAM_1">
+<link name="realsense_link">
   <inertial>
     <origin xyz="0.011657410142899255 -0.0011559566930996867 0.0010283014584634431" rpy="0 0 0"/>
     <mass value="0.03866336197375993"/>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.073593 0.005001 -0.950168" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find robot_description)/meshes/realsense_DCAM_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robot_description)/meshes/realsense_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.073593 0.005001 -0.950168" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find robot_description)/meshes/realsense_DCAM_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find robot_description)/meshes/realsense_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -499,7 +499,7 @@
 <joint name="realsense_joint" type="fixed">
   <origin xyz="0.025437 -0.024846 0.048271" rpy="0 0 0"/>
   <parent link="vision_module_link_1"/>
-  <child link="realsense_DCAM_1"/>
+  <child link="realsense_link"/>
 </joint>
 
 <joint name="shoulder_joint" type="continuous">

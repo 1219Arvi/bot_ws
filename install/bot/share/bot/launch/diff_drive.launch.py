@@ -112,4 +112,10 @@ def generate_launch_description():
                 on_exit=[load_diff_drive_base_controller]
             )
         ),
+        Node(
+            package='image_flip_node',
+            executable='image_flip',
+            name='flip_depth_image',
+            output='screen'
+        )
     ])

@@ -1,0 +1,3 @@
+[console_scripts]
+image_flip = image_flip_node.image_flip_node:main
+

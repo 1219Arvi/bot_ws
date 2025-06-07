@@ -1,0 +1,290 @@
+[0.139s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.139s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7c894825ba00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c894825b4c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c894825b4c0>>)
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.347s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/arvi/bot_ws'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/bot) by extension 'ros'
+[0.369s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bot' with type 'ros.ament_cmake' and name 'bot'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extension 'colcon_pkg'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extensions ['colcon_meta']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(src/joint_states_merger) by extension 'ros'
+[0.370s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joint_states_merger' with type 'ros.ament_python' and name 'joint_states_merger'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.371s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/teleop_twist_stamped) by extension 'ros'
+[0.372s] DEBUG:colcon.colcon_core.package_identification:Package 'src/teleop_twist_stamped' with type 'ros.ament_python' and name 'teleop_twist_stamped'
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.395s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 331 installed packages in /opt/ros/humble
+[0.396s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arvi/bot_ws/build/bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arvi/bot_ws/install/bot', 'merge_install': False, 'path': '/home/arvi/bot_ws/src/bot', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'joint_states_merger' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'joint_states_merger' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arvi/bot_ws/build/joint_states_merger', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arvi/bot_ws/install/joint_states_merger', 'merge_install': False, 'path': '/home/arvi/bot_ws/src/joint_states_merger', 'symlink_install': False, 'test_result_base': None}
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arvi/bot_ws/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arvi/bot_ws/install/robot_description', 'merge_install': False, 'path': '/home/arvi/bot_ws/src/robot_description', 'symlink_install': False, 'test_result_base': None}
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'teleop_twist_stamped' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'teleop_twist_stamped' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/arvi/bot_ws/build/teleop_twist_stamped', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/arvi/bot_ws/install/teleop_twist_stamped', 'merge_install': False, 'path': '/home/arvi/bot_ws/src/teleop_twist_stamped', 'symlink_install': False, 'test_result_base': None}
+[0.419s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.420s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.420s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/arvi/bot_ws/src/bot' with build type 'ament_cmake'
+[0.420s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/arvi/bot_ws/src/bot'
+[0.423s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.426s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/arvi/bot_ws/src/joint_states_merger' with build type 'ament_python'
+[0.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('joint_states_merger', 'ament_prefix_path')
+[0.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/hook/ament_prefix_path.ps1'
+[0.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/hook/ament_prefix_path.dsv'
+[0.428s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/hook/ament_prefix_path.sh'
+[0.428s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.428s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.430s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/arvi/bot_ws/src/robot_description' with build type 'ament_python'
+[0.430s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'ament_prefix_path')
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/robot_description/share/robot_description/hook/ament_prefix_path.ps1'
+[0.430s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/robot_description/share/robot_description/hook/ament_prefix_path.dsv'
+[0.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/robot_description/share/robot_description/hook/ament_prefix_path.sh'
+[0.431s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.433s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/arvi/bot_ws/src/teleop_twist_stamped' with build type 'ament_python'
+[0.433s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_twist_stamped', 'ament_prefix_path')
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/hook/ament_prefix_path.ps1'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/hook/ament_prefix_path.dsv'
+[0.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/hook/ament_prefix_path.sh'
+[0.435s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.435s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arvi/bot_ws/build/bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arvi/bot_ws/build/bot -- -j16 -l16
+[0.630s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/arvi/bot_ws/src/joint_states_merger'
+[0.630s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.630s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.802s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/arvi/bot_ws/src/robot_description'
+[0.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.802s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.973s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/arvi/bot_ws/src/teleop_twist_stamped'
+[0.974s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.974s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arvi/bot_ws/build/bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/arvi/bot_ws/build/bot -- -j16 -l16
+[0.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arvi/bot_ws/build/bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arvi/bot_ws/build/bot
+[1.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bot)
+[1.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arvi/bot_ws/build/bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/arvi/bot_ws/build/bot
+[1.006s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot' for CMake module files
+[1.007s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot' for CMake config files
+[1.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('bot', 'cmake_prefix_path')
+[1.007s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/bot/share/bot/hook/cmake_prefix_path.ps1'
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/bot/share/bot/hook/cmake_prefix_path.dsv'
+[1.008s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/bot/share/bot/hook/cmake_prefix_path.sh'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/lib'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/bin'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/lib/pkgconfig/bot.pc'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/lib/python3.10/site-packages'
+[1.009s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/bin'
+[1.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.ps1'
+[1.011s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arvi/bot_ws/install/bot/share/bot/package.dsv'
+[1.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.sh'
+[1.013s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.bash'
+[1.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.zsh'
+[1.015s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arvi/bot_ws/install/bot/share/colcon-core/packages/bot)
+[1.015s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bot)
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot' for CMake module files
+[1.016s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot' for CMake config files
+[1.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('bot', 'cmake_prefix_path')
+[1.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/bot/share/bot/hook/cmake_prefix_path.ps1'
+[1.017s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/bot/share/bot/hook/cmake_prefix_path.dsv'
+[1.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/bot/share/bot/hook/cmake_prefix_path.sh'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/lib'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/bin'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/lib/pkgconfig/bot.pc'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/lib/python3.10/site-packages'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/bot/bin'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.ps1'
+[1.019s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arvi/bot_ws/install/bot/share/bot/package.dsv'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.sh'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.bash'
+[1.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/bot/share/bot/package.zsh'
+[1.021s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arvi/bot_ws/install/bot/share/colcon-core/packages/bot)
+[1.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arvi/bot_ws/src/teleop_twist_stamped': PYTHONPATH=/home/arvi/bot_ws/build/teleop_twist_stamped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_twist_stamped build --build-base /home/arvi/bot_ws/build/teleop_twist_stamped/build install --record /home/arvi/bot_ws/build/teleop_twist_stamped/install.log --single-version-externally-managed install_data
+[1.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arvi/bot_ws/src/joint_states_merger': PYTHONPATH=/home/arvi/bot_ws/build/joint_states_merger/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_states_merger build --build-base /home/arvi/bot_ws/build/joint_states_merger/build install --record /home/arvi/bot_ws/build/joint_states_merger/install.log --single-version-externally-managed install_data
+[1.386s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/arvi/bot_ws/src/robot_description': PYTHONPATH=/home/arvi/bot_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/arvi/bot_ws/build/robot_description/build install --record /home/arvi/bot_ws/build/robot_description/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped' for CMake module files
+[1.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arvi/bot_ws/src/teleop_twist_stamped' returned '0': PYTHONPATH=/home/arvi/bot_ws/build/teleop_twist_stamped/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/teleop_twist_stamped build --build-base /home/arvi/bot_ws/build/teleop_twist_stamped/build install --record /home/arvi/bot_ws/build/teleop_twist_stamped/install.log --single-version-externally-managed install_data
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped' for CMake config files
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped/lib'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped/bin'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped/lib/pkgconfig/teleop_twist_stamped.pc'
+[1.621s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped/lib/python3.10/site-packages'
+[1.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('teleop_twist_stamped', 'pythonpath')
+[1.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/hook/pythonpath.ps1'
+[1.622s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/hook/pythonpath.dsv'
+[1.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/hook/pythonpath.sh'
+[1.624s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/teleop_twist_stamped/bin'
+[1.624s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(teleop_twist_stamped)
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/package.ps1'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/package.dsv'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/package.sh'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/package.bash'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/teleop_twist_stamped/share/teleop_twist_stamped/package.zsh'
+[1.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arvi/bot_ws/install/teleop_twist_stamped/share/colcon-core/packages/teleop_twist_stamped)
+[1.628s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger' for CMake module files
+[1.628s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arvi/bot_ws/src/joint_states_merger' returned '0': PYTHONPATH=/home/arvi/bot_ws/build/joint_states_merger/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_states_merger build --build-base /home/arvi/bot_ws/build/joint_states_merger/build install --record /home/arvi/bot_ws/build/joint_states_merger/install.log --single-version-externally-managed install_data
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger' for CMake config files
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger/lib'
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger/bin'
+[1.629s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger/lib/pkgconfig/joint_states_merger.pc'
+[1.630s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages'
+[1.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('joint_states_merger', 'pythonpath')
+[1.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/hook/pythonpath.ps1'
+[1.630s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/hook/pythonpath.dsv'
+[1.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/hook/pythonpath.sh'
+[1.631s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/joint_states_merger/bin'
+[1.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joint_states_merger)
+[1.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/package.ps1'
+[1.632s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/package.dsv'
+[1.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/package.sh'
+[1.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/package.bash'
+[1.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/joint_states_merger/share/joint_states_merger/package.zsh'
+[1.633s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arvi/bot_ws/install/joint_states_merger/share/colcon-core/packages/joint_states_merger)
+[1.637s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description' for CMake module files
+[1.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/arvi/bot_ws/src/robot_description' returned '0': PYTHONPATH=/home/arvi/bot_ws/build/robot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/arvi/bot_ws/build/robot_description/build install --record /home/arvi/bot_ws/build/robot_description/install.log --install-scripts $base/lib/robot_description --single-version-externally-managed install_data
+[1.638s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description' for CMake config files
+[1.639s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description/lib'
+[1.639s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description/bin'
+[1.639s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description/lib/pkgconfig/robot_description.pc'
+[1.639s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description/lib/python3.10/site-packages'
+[1.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath')
+[1.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/robot_description/share/robot_description/hook/pythonpath.ps1'
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/arvi/bot_ws/install/robot_description/share/robot_description/hook/pythonpath.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/arvi/bot_ws/install/robot_description/share/robot_description/hook/pythonpath.sh'
+[1.640s] Level 1:colcon.colcon_core.environment:checking '/home/arvi/bot_ws/install/robot_description/bin'
+[1.640s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/robot_description/share/robot_description/package.ps1'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/arvi/bot_ws/install/robot_description/share/robot_description/package.dsv'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/robot_description/share/robot_description/package.sh'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/robot_description/share/robot_description/package.bash'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/arvi/bot_ws/install/robot_description/share/robot_description/package.zsh'
+[1.642s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/arvi/bot_ws/install/robot_description/share/colcon-core/packages/robot_description)
+[1.642s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.642s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.643s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.643s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.650s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.650s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.650s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.659s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.660s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arvi/bot_ws/install/local_setup.ps1'
+[1.661s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/arvi/bot_ws/install/_local_setup_util_ps1.py'
+[1.662s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arvi/bot_ws/install/setup.ps1'
+[1.663s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arvi/bot_ws/install/local_setup.sh'
+[1.664s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/arvi/bot_ws/install/_local_setup_util_sh.py'
+[1.664s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arvi/bot_ws/install/setup.sh'
+[1.665s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arvi/bot_ws/install/local_setup.bash'
+[1.666s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arvi/bot_ws/install/setup.bash'
+[1.667s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/arvi/bot_ws/install/local_setup.zsh'
+[1.668s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/arvi/bot_ws/install/setup.zsh'

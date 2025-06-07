@@ -1,0 +1,21 @@
+[0.940s] Invoking command in '/home/arvi/bot_ws/src/joint_states_merger': PYTHONPATH=/home/arvi/bot_ws/build/joint_states_merger/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_states_merger build --build-base /home/arvi/bot_ws/build/joint_states_merger/build install --record /home/arvi/bot_ws/build/joint_states_merger/install.log --single-version-externally-managed install_data
+[1.108s] running egg_info
+[1.109s] writing ../../build/joint_states_merger/joint_states_merger.egg-info/PKG-INFO
+[1.109s] writing dependency_links to ../../build/joint_states_merger/joint_states_merger.egg-info/dependency_links.txt
+[1.109s] writing entry points to ../../build/joint_states_merger/joint_states_merger.egg-info/entry_points.txt
+[1.110s] writing requirements to ../../build/joint_states_merger/joint_states_merger.egg-info/requires.txt
+[1.110s] writing top-level names to ../../build/joint_states_merger/joint_states_merger.egg-info/top_level.txt
+[1.111s] reading manifest file '../../build/joint_states_merger/joint_states_merger.egg-info/SOURCES.txt'
+[1.112s] writing manifest file '../../build/joint_states_merger/joint_states_merger.egg-info/SOURCES.txt'
+[1.112s] running build
+[1.112s] running build_py
+[1.112s] running install
+[1.112s] running install_lib
+[1.113s] running install_data
+[1.113s] running install_egg_info
+[1.115s] removing '/home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages/joint_states_merger-0.0.0-py3.10.egg-info' (and everything under it)
+[1.115s] Copying ../../build/joint_states_merger/joint_states_merger.egg-info to /home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages/joint_states_merger-0.0.0-py3.10.egg-info
+[1.115s] running install_scripts
+[1.134s] Installing joint_states_merger script to /home/arvi/bot_ws/install/joint_states_merger/lib/joint_states_merger
+[1.134s] writing list of installed files to '/home/arvi/bot_ws/build/joint_states_merger/install.log'
+[1.162s] Invoked command in '/home/arvi/bot_ws/src/joint_states_merger' returned '0': PYTHONPATH=/home/arvi/bot_ws/build/joint_states_merger/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/bot_ws/install/joint_states_merger/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joint_states_merger build --build-base /home/arvi/bot_ws/build/joint_states_merger/build install --record /home/arvi/bot_ws/build/joint_states_merger/install.log --single-version-externally-managed install_data

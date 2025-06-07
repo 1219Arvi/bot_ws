@@ -15,7 +15,7 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 'image_size': [640,480],
-                'camera_frame_id': 'realsense_DCAM_1'
+                'camera_frame_id': 'realsense_link'
                 }]
     )
     ])
