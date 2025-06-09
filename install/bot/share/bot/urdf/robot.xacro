@@ -495,7 +495,7 @@
   <origin xyz="-0.010756 -0.134446 0.062625" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="right_wheel_link_1"/>
-  <axis xyz="0.00034 -1.0 -0.0"/>
+  <axis xyz="0.00034 1.0 -0.0"/>
 </joint>
 
 <joint name="camera_mount_joint" type="revolute">
@@ -634,6 +634,8 @@
   <parent link="base_link"/>
   <child link="castor3_link_1"/>
   <axis xyz="-0.0 0.0 -1.0"/>
+
+  
 </joint>
 
 

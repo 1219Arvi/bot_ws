@@ -1,0 +1,52 @@
+[0.024s] Invoking command in '/home/arvi/nav_ws/build/bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/arvi/nav_ws/install/relay:/home/arvi/nav_ws/install/topic_relay:/home/arvi/nav_ws/src/install/topic_relay:/home/arvi/nav_ws/src/install/teleop_twist_stamped:/home/arvi/nav_ws/src/install/robot_description:/home/arvi/nav_ws/src/install/joint_states_merger:/home/arvi/nav_ws/src/install/image_flip_node:/home/arvi/nav_ws/install/teleop_twist_stamped:/home/arvi/nav_ws/install/robot_description:/home/arvi/nav_ws/install/joint_states_merger:/home/arvi/nav_ws/install/image_flip_node:/opt/ros/humble /usr/bin/cmake --build /home/arvi/nav_ws/build/bot -- -j16 -l16
+[0.712s] [ 14%] Built target example_gripper
+[0.713s] [ 35%] Built target example_position_pid
+[0.713s] [ 57%] Built target example_diff_drive
+[0.713s] [ 50%] Built target example_position
+[0.713s] [ 71%] Built target example_effort
+[0.713s] [ 85%] Built target example_velocity
+[0.713s] [100%] Built target example_tricycle_drive
+[0.893s] Invoked command in '/home/arvi/nav_ws/build/bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/arvi/nav_ws/install/relay:/home/arvi/nav_ws/install/topic_relay:/home/arvi/nav_ws/src/install/topic_relay:/home/arvi/nav_ws/src/install/teleop_twist_stamped:/home/arvi/nav_ws/src/install/robot_description:/home/arvi/nav_ws/src/install/joint_states_merger:/home/arvi/nav_ws/src/install/image_flip_node:/home/arvi/nav_ws/install/teleop_twist_stamped:/home/arvi/nav_ws/install/robot_description:/home/arvi/nav_ws/install/joint_states_merger:/home/arvi/nav_ws/install/image_flip_node:/opt/ros/humble /usr/bin/cmake --build /home/arvi/nav_ws/build/bot -- -j16 -l16
+[0.901s] Invoking command in '/home/arvi/nav_ws/build/bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/arvi/nav_ws/install/relay:/home/arvi/nav_ws/install/topic_relay:/home/arvi/nav_ws/src/install/topic_relay:/home/arvi/nav_ws/src/install/teleop_twist_stamped:/home/arvi/nav_ws/src/install/robot_description:/home/arvi/nav_ws/src/install/joint_states_merger:/home/arvi/nav_ws/src/install/image_flip_node:/home/arvi/nav_ws/install/teleop_twist_stamped:/home/arvi/nav_ws/install/robot_description:/home/arvi/nav_ws/install/joint_states_merger:/home/arvi/nav_ws/install/image_flip_node:/opt/ros/humble /usr/bin/cmake --install /home/arvi/nav_ws/build/bot
+[0.911s] -- Install configuration: ""
+[0.911s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//launch
+[0.911s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//launch/diff_drive.launch.py
+[0.911s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//launch/rviz.launch.py
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//config
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//config/diff_drive_controller.yaml
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//config/mapper_params_online_async.yaml
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//config/rviz_confg.rviz
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf/robot.urdf
+[0.912s] -- Installing: /home/arvi/nav_ws/install/bot/share/bot//urdf/robot.gazebo
+[0.912s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf/out.urdf
+[0.913s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf/materials.xacro
+[0.913s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf/depth_camera.xacro
+[0.913s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf/robot.trans
+[0.913s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//urdf/robot.xacro
+[0.913s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//worlds
+[0.913s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//worlds/obstacles.world
+[0.914s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot//worlds/empty.world
+[0.914s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_position
+[0.914s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_position_pid
+[0.914s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_velocity
+[0.915s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_effort
+[0.915s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_diff_drive
+[0.915s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_tricycle_drive
+[0.915s] -- Up-to-date: /home/arvi/nav_ws/install/bot/lib/bot/example_gripper
+[0.916s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/ament_index/resource_index/package_run_dependencies/bot
+[0.916s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/ament_index/resource_index/parent_prefix_path/bot
+[0.916s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/environment/ament_prefix_path.sh
+[0.916s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/environment/ament_prefix_path.dsv
+[0.917s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/environment/path.sh
+[0.917s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/environment/path.dsv
+[0.917s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/local_setup.bash
+[0.918s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/local_setup.sh
+[0.918s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/local_setup.zsh
+[0.918s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/local_setup.dsv
+[0.918s] -- Installing: /home/arvi/nav_ws/install/bot/share/bot/package.dsv
+[0.918s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/ament_index/resource_index/packages/bot
+[0.918s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/cmake/botConfig.cmake
+[0.919s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/cmake/botConfig-version.cmake
+[0.919s] -- Up-to-date: /home/arvi/nav_ws/install/bot/share/bot/package.xml
+[0.919s] Invoked command in '/home/arvi/nav_ws/build/bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/arvi/nav_ws/install/relay:/home/arvi/nav_ws/install/topic_relay:/home/arvi/nav_ws/src/install/topic_relay:/home/arvi/nav_ws/src/install/teleop_twist_stamped:/home/arvi/nav_ws/src/install/robot_description:/home/arvi/nav_ws/src/install/joint_states_merger:/home/arvi/nav_ws/src/install/image_flip_node:/home/arvi/nav_ws/install/teleop_twist_stamped:/home/arvi/nav_ws/install/robot_description:/home/arvi/nav_ws/install/joint_states_merger:/home/arvi/nav_ws/install/image_flip_node:/opt/ros/humble /usr/bin/cmake --install /home/arvi/nav_ws/build/bot

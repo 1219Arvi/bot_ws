@@ -1,5 +1,6 @@
 /home/arvi/nav_ws/install/bot/share/bot//launch/diff_drive.launch.py
 /home/arvi/nav_ws/install/bot/share/bot//launch/rviz.launch.py
+/home/arvi/nav_ws/install/bot/share/bot//launch/joy.launch.py
 /home/arvi/nav_ws/install/bot/share/bot//config/diff_drive_controller.yaml
 /home/arvi/nav_ws/install/bot/share/bot//config/mapper_params_online_async.yaml
 /home/arvi/nav_ws/install/bot/share/bot//config/rviz_confg.rviz

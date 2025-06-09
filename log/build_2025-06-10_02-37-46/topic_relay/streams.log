@@ -1,0 +1,21 @@
+[1.170s] Invoking command in '/home/arvi/nav_ws/src/topic_relay': PYTHONPATH=/home/arvi/nav_ws/build/topic_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/nav_ws/install/topic_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/topic_relay build --build-base /home/arvi/nav_ws/build/topic_relay/build install --record /home/arvi/nav_ws/build/topic_relay/install.log --single-version-externally-managed install_data
+[1.375s] running egg_info
+[1.376s] writing ../../build/topic_relay/topic_relay.egg-info/PKG-INFO
+[1.376s] writing dependency_links to ../../build/topic_relay/topic_relay.egg-info/dependency_links.txt
+[1.376s] writing entry points to ../../build/topic_relay/topic_relay.egg-info/entry_points.txt
+[1.376s] writing requirements to ../../build/topic_relay/topic_relay.egg-info/requires.txt
+[1.377s] writing top-level names to ../../build/topic_relay/topic_relay.egg-info/top_level.txt
+[1.378s] reading manifest file '../../build/topic_relay/topic_relay.egg-info/SOURCES.txt'
+[1.379s] writing manifest file '../../build/topic_relay/topic_relay.egg-info/SOURCES.txt'
+[1.379s] running build
+[1.379s] running build_py
+[1.379s] running install
+[1.379s] running install_lib
+[1.381s] running install_data
+[1.381s] running install_egg_info
+[1.383s] removing '/home/arvi/nav_ws/install/topic_relay/lib/python3.10/site-packages/topic_relay-0.0.0-py3.10.egg-info' (and everything under it)
+[1.384s] Copying ../../build/topic_relay/topic_relay.egg-info to /home/arvi/nav_ws/install/topic_relay/lib/python3.10/site-packages/topic_relay-0.0.0-py3.10.egg-info
+[1.384s] running install_scripts
+[1.407s] Installing odom_relay_node script to /home/arvi/nav_ws/install/topic_relay/lib/topic_relay
+[1.407s] writing list of installed files to '/home/arvi/nav_ws/build/topic_relay/install.log'
+[1.431s] Invoked command in '/home/arvi/nav_ws/src/topic_relay' returned '0': PYTHONPATH=/home/arvi/nav_ws/build/topic_relay/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arvi/nav_ws/install/topic_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/topic_relay build --build-base /home/arvi/nav_ws/build/topic_relay/build install --record /home/arvi/nav_ws/build/topic_relay/install.log --single-version-externally-managed install_data
