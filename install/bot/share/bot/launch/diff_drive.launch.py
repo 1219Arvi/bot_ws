@@ -38,6 +38,12 @@ def generate_launch_description():
     doc = xacro.process_file(xacro_file)
     robot_description = {'robot_description': doc.toxml()}
 
+    slam_params = os.path.join(
+        get_package_share_directory('bot'),
+        'config',
+        'mapper_params_online_async.yaml'
+    )
+
     # Start robot_state_publisher (remapped to merged joint states)
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
@@ -67,14 +73,14 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Static joint state publisher GUI (remaps to /joint_states_static)
+    # Static joint state publisher GUI (remaps to /joint_states_gui)
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
         name='joint_state_publisher_gui',
         output='screen',
         remappings=[
-            ('/joint_states', '/joint_states_static')
+            ('/joint_states', '/joint_states_gui')
         ],
         parameters=[{'use_sim_time': True}]
     )
@@ -86,11 +92,22 @@ def generate_launch_description():
         name='joint_states_merger',
         output='screen',
         parameters=[{
-            'input_topics': ['/joint_states', '/joint_states_static'],
+            'input_topics': ['/joint_states', '/joint_states_gui'],
             'output_topic': '/joint_states_merged',
             'use_sim_time': True
         }]
     )
+    slam_toolbox_node = Node(
+        package='slam_toolbox',
+        executable='async_slam_toolbox_node',
+        name='slam_toolbox',
+        output='screen',
+        remappings=[
+        ('odom', '/diff_drive_base_controller/odom'),
+          ],
+        parameters=[slam_params, {'use_sim_time': True}],
+)
+
 
     return LaunchDescription([
         gazebo,
@@ -98,6 +115,7 @@ def generate_launch_description():
         joint_states_merger_node,
         node_robot_state_publisher,
         spawn_entity,
+        slam_toolbox_node,
 
         # Load controllers in correct sequence
         RegisterEventHandler(
@@ -117,5 +135,53 @@ def generate_launch_description():
             executable='image_flip',
             name='flip_depth_image',
             output='screen'
-        )
-    ])
+        ),
+        Node(
+            package='depthimage_to_laserscan',
+            executable='depthimage_to_laserscan_node',
+            name='depth2scan',
+            output='screen',
+            parameters=[{
+                'output_frame_id': 'camera_link_optical' ,
+                'use_sim_time': True 
+            }],
+            remappings=[
+            ('depth', '/flip_depth/image'),  # From your image_flip_node
+            ('depth_camera_info', '/camera/depth/camera_info'),
+            ('scan', '/scan')  # slam_toolbox listens here
+        ]
+        ),
+        Node(
+            package='topic_relay',
+            executable='odom_relay_node',
+            name='odom_relay',
+            output='screen',
+            parameters=[{'use_sim_time': True}]
+        ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='vision_to_realsense_broadcaster',
+        #     arguments=[
+        #         '0', '0', '0', '0', '0', '0',
+        #         'vision_module_link_1', 'realsense_link'
+        #     ],
+        #     output='screen',
+        #     parameters=[],
+        #     # Important: ensure the node doesn't immediately exit!
+        #     # Use 'respawn=True' if needed, but better:
+        #     emulate_tty=True
+        # ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='realsense_to_optical_broadcaster',
+        #     arguments=[
+        #         '0', '0', '0', '0', '0', '0',
+        #         'realsense_link', 'camera_link_optical'
+        #     ],
+        #     output='screen',
+        #     emulate_tty=True
+        # )
+
+   ])

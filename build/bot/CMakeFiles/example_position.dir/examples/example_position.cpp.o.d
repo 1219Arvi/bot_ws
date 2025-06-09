@@ -1,5 +1,5 @@
 CMakeFiles/example_position.dir/examples/example_position.cpp.o: \
- /home/arvi/bot_ws/src/bot/examples/example_position.cpp \
+ /home/arvi/nav_ws/src/bot/examples/example_position.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

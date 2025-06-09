@@ -1,0 +1,30 @@
+digraph G {
+"base_link" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"odom" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 50.407\nBuffer length: 2.46\nMost recent transform: 655.431\nOldest transform: 652.971\n"];
+"realsense_link" -> "camera_link_optical"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"vision_module_link_1" -> "realsense_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_mount_link_1" -> "vision_module_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "camera_mount_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "castor1_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"castor1_link_1" -> "castor1_wheel_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "castor2_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"castor2_link_1" -> "castor2_wheel_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"castor3_link_1" -> "castor3_wheel_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "castor3_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "castor4_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"castor4_link_1" -> "castor4_wheel_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"upper_arm_link_1" -> "elbow_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"shoulder_link__1" -> "upper_arm_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"elbow_link_1" -> "forearm_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"wrist_pitch_link_1" -> "claw_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"wrist_roll_link_1" -> "wrist_pitch_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "left_wheel_link_2"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "right_wheel_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"base_link" -> "shoulder_link__1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"claw_link_1" -> "tool_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+"forearm_link_1" -> "wrist_roll_link_1"[label=" Broadcaster: default_authority\nAverage rate: 10.385\nBuffer length: 2.6\nMost recent transform: 655.345\nOldest transform: 652.745\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1749460764.0029452"[ shape=plaintext ] ;
+}->"odom";
+}

@@ -7,7 +7,7 @@ class JointStatesMerger(Node):
     def __init__(self):
         super().__init__('joint_states_merger')
 
-        self.declare_parameter('input_topics', ['/joint_states', '/joint_states_static'])
+        self.declare_parameter('input_topics', ['/joint_states', '/joint_states_gui'])
         self.declare_parameter('output_topic', '/joint_states_merged')
 
         self.input_topics = self.get_parameter('input_topics').get_parameter_value().string_array_value
@@ -18,7 +18,7 @@ class JointStatesMerger(Node):
 
         self.publisher = self.create_publisher(JointState, self.output_topic, 10)
 
-        # Define wheel joints to exclude from static joint states
+        # Define wheel joints to exclude from gui joint states
         self.wheel_joints = ['left_wheel_joint', 'right_wheel_joint']
 
         self.subscribers = []
@@ -35,7 +35,7 @@ class JointStatesMerger(Node):
     def joint_state_callback(self, msg: JointState, topic: str):
         with self.lock:
             # If message is from static joint states topic, skip wheel joints
-            if topic == '/joint_states_static':
+            if topic == '/joint_states_gui':
                 for i, name in enumerate(msg.name):
                     if name in self.wheel_joints:
                         continue  # Skip wheels from static topic

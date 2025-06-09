@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arvi/bot_ws/src/bot/examples/example_gripper.cpp" "CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o" "gcc" "CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o.d"
+  "/home/arvi/nav_ws/src/bot/examples/example_gripper.cpp" "CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o" "gcc" "CMakeFiles/example_gripper.dir/examples/example_gripper.cpp.o.d"
   )
 
 # Targets to which this target links.

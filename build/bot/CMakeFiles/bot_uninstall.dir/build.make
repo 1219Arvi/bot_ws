@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/arvi/bot_ws/src/bot
+CMAKE_SOURCE_DIR = /home/arvi/nav_ws/src/bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arvi/bot_ws/build/bot
+CMAKE_BINARY_DIR = /home/arvi/nav_ws/build/bot
 
 # Utility rule file for bot_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/bot_uninstall.dir/compiler_depend.make
 include CMakeFiles/bot_uninstall.dir/progress.make
 
 CMakeFiles/bot_uninstall:
-	/usr/bin/cmake -P /home/arvi/bot_ws/build/bot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/arvi/nav_ws/build/bot/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 bot_uninstall: CMakeFiles/bot_uninstall
 bot_uninstall: CMakeFiles/bot_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/bot_uninstall.dir/clean:
 .PHONY : CMakeFiles/bot_uninstall.dir/clean
 
 CMakeFiles/bot_uninstall.dir/depend:
-	cd /home/arvi/bot_ws/build/bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arvi/bot_ws/src/bot /home/arvi/bot_ws/src/bot /home/arvi/bot_ws/build/bot /home/arvi/bot_ws/build/bot /home/arvi/bot_ws/build/bot/CMakeFiles/bot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/arvi/nav_ws/build/bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/arvi/nav_ws/src/bot /home/arvi/nav_ws/src/bot /home/arvi/nav_ws/build/bot /home/arvi/nav_ws/build/bot /home/arvi/nav_ws/build/bot/CMakeFiles/bot_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/bot_uninstall.dir/depend
 

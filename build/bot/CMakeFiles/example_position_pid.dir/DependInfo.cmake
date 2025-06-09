@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/arvi/bot_ws/src/bot/examples/example_position_pid.cpp" "CMakeFiles/example_position_pid.dir/examples/example_position_pid.cpp.o" "gcc" "CMakeFiles/example_position_pid.dir/examples/example_position_pid.cpp.o.d"
+  "/home/arvi/nav_ws/src/bot/examples/example_position_pid.cpp" "CMakeFiles/example_position_pid.dir/examples/example_position_pid.cpp.o" "gcc" "CMakeFiles/example_position_pid.dir/examples/example_position_pid.cpp.o.d"
   )
 
 # Targets to which this target links.

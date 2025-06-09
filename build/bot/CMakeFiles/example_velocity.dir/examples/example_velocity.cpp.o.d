@@ -1,5 +1,5 @@
 CMakeFiles/example_velocity.dir/examples/example_velocity.cpp.o: \
- /home/arvi/bot_ws/src/bot/examples/example_velocity.cpp \
+ /home/arvi/nav_ws/src/bot/examples/example_velocity.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

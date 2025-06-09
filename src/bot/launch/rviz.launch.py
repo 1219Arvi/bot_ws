@@ -25,7 +25,7 @@ def generate_launch_description():
             output='screen',
             parameters=[
                 {
-                    'input_topics': ['/joint_states', '/joint_states_static'],
+                    'input_topics': ['/joint_states', '/joint_states_gui'],
                     'output_topic': '/joint_states_merged',
                     'use_sim_time': True
                 }

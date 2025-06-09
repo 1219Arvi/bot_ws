@@ -1,8 +1,8 @@
-# Install script for directory: /home/arvi/bot_ws/src/bot
+# Install script for directory: /home/arvi/nav_ws/src/bot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/arvi/bot_ws/install/bot")
+  set(CMAKE_INSTALL_PREFIX "/home/arvi/nav_ws/install/bot")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,10 +44,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot/" TYPE DIRECTORY FILES
-    "/home/arvi/bot_ws/src/bot/launch"
-    "/home/arvi/bot_ws/src/bot/config"
-    "/home/arvi/bot_ws/src/bot/urdf"
-    "/home/arvi/bot_ws/src/bot/worlds"
+    "/home/arvi/nav_ws/src/bot/launch"
+    "/home/arvi/nav_ws/src/bot/config"
+    "/home/arvi/nav_ws/src/bot/urdf"
+    "/home/arvi/nav_ws/src/bot/worlds"
     )
 endif()
 
@@ -58,7 +58,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_position"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_position")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_position")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_position" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_position")
     file(RPATH_CHANGE
@@ -78,7 +78,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_position_pid"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_position_pid")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_position_pid")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_position_pid" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_position_pid")
     file(RPATH_CHANGE
@@ -98,7 +98,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_velocity"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_velocity")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_velocity")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_velocity" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_velocity")
     file(RPATH_CHANGE
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_effort"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_effort")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_effort")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_effort" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_effort")
     file(RPATH_CHANGE
@@ -138,7 +138,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_diff_drive"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_diff_drive")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_diff_drive")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_diff_drive" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_diff_drive")
     file(RPATH_CHANGE
@@ -158,7 +158,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_tricycle_drive"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_tricycle_drive")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_tricycle_drive")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_tricycle_drive" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_tricycle_drive")
     file(RPATH_CHANGE
@@ -178,7 +178,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_gripper"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/bot_ws/build/bot/example_gripper")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/bot" TYPE EXECUTABLE FILES "/home/arvi/nav_ws/build/bot/example_gripper")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_gripper" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/bot/example_gripper")
     file(RPATH_CHANGE
@@ -192,11 +192,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/bot")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/bot")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/bot")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/bot")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -204,7 +204,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot/environment" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot/environment" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -212,42 +212,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot/environment" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot/environment" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/arvi/bot_ws/build/bot/ament_cmake_index/share/ament_index/resource_index/packages/bot")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/arvi/nav_ws/build/bot/ament_cmake_index/share/ament_index/resource_index/packages/bot")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot/cmake" TYPE FILE FILES
-    "/home/arvi/bot_ws/build/bot/ament_cmake_core/botConfig.cmake"
-    "/home/arvi/bot_ws/build/bot/ament_cmake_core/botConfig-version.cmake"
+    "/home/arvi/nav_ws/build/bot/ament_cmake_core/botConfig.cmake"
+    "/home/arvi/nav_ws/build/bot/ament_cmake_core/botConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/bot_ws/src/bot/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/bot" TYPE FILE FILES "/home/arvi/nav_ws/src/bot/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -258,5 +258,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/arvi/bot_ws/build/bot/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/arvi/nav_ws/build/bot/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
