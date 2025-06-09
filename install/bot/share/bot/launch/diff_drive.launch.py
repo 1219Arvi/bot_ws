@@ -142,7 +142,7 @@ def generate_launch_description():
             name='depth2scan',
             output='screen',
             parameters=[{
-                'output_frame_id': 'camera_link_optical' ,
+                'output_frame': 'camera_link_optical' ,
                 'use_sim_time': True 
             }],
             remappings=[
@@ -158,30 +158,4 @@ def generate_launch_description():
             output='screen',
             parameters=[{'use_sim_time': True}]
         ),
-        # Node(
-        #     package='tf2_ros',
-        #     executable='static_transform_publisher',
-        #     name='vision_to_realsense_broadcaster',
-        #     arguments=[
-        #         '0', '0', '0', '0', '0', '0',
-        #         'vision_module_link_1', 'realsense_link'
-        #     ],
-        #     output='screen',
-        #     parameters=[],
-        #     # Important: ensure the node doesn't immediately exit!
-        #     # Use 'respawn=True' if needed, but better:
-        #     emulate_tty=True
-        # ),
-        # Node(
-        #     package='tf2_ros',
-        #     executable='static_transform_publisher',
-        #     name='realsense_to_optical_broadcaster',
-        #     arguments=[
-        #         '0', '0', '0', '0', '0', '0',
-        #         'realsense_link', 'camera_link_optical'
-        #     ],
-        #     output='screen',
-        #     emulate_tty=True
-        # )
-
    ])

@@ -142,7 +142,7 @@ def generate_launch_description():
             name='depth2scan',
             output='screen',
             parameters=[{
-                'output_frame_id': 'camera_link_optical' ,
+                'output_frame': 'camera_link_optical' ,
                 'use_sim_time': True 
             }],
             remappings=[
