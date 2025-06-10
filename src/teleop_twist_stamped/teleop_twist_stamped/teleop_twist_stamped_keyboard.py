@@ -3,7 +3,9 @@ import rclpy
 from rclpy.qos import QoSProfile
 from geometry_msgs.msg import TwistStamped
 import sys, select, termios, tty
+import time
 
+# Save terminal settings at startup for restoration on exit
 settings = termios.tcgetattr(sys.stdin)
 
 msg = """
@@ -20,7 +22,6 @@ e/c : increase/decrease only angular speed by 10%
 
 CTRL-C to quit
 """
-
 
 speedBindings = {
     'q': (1.1, 1.1),
@@ -54,18 +55,13 @@ def main(args=None):
     x = 0.0
     th = 0.0
     z = 0.0
-    status = 0
 
     try:
         print(msg)
         print(vels(speed, turn))
         while rclpy.ok():
             key = getKey()
-
-            # Reset all axes before assigning new ones
-            prev_x = x
-            prev_th = th
-            prev_z = z
+            print(f"Key: {key}, x: {x}, th: {th}, z: {z}")  # Debug output
 
             if key == 'f':     # Forward
                 x = 1.0
@@ -79,7 +75,7 @@ def main(args=None):
                 z = 1.0
             elif key == 'd':   # Down
                 z = -1.0
-            elif key == 's':   # 🔴 STOP
+            elif key == 's':   # STOP
                 x = 0.0
                 th = 0.0
                 z = 0.0
@@ -96,15 +92,6 @@ def main(args=None):
                 th = 0.0
                 z = 0.0
 
-            # If any axis changed direction, override opposite
-            if x != prev_x and x != 0:
-                x = x
-            if th != prev_th and th != 0:
-                th = th
-            if z != prev_z and z != 0:
-                z = z
-                
-
             twist_stamped = TwistStamped()
             twist_stamped.header.stamp = node.get_clock().now().to_msg()
             twist_stamped.header.frame_id = 'base_link'
@@ -116,10 +103,13 @@ def main(args=None):
             twist_stamped.twist.angular.z = th * turn
             pub.publish(twist_stamped)
 
+            time.sleep(0.05)
+
     except Exception as e:
         print(e)
 
     finally:
+        # Always send a stop command and restore terminal settings
         twist_stamped = TwistStamped()
         twist_stamped.header.stamp = node.get_clock().now().to_msg()
         twist_stamped.header.frame_id = 'base_link'
@@ -130,7 +120,6 @@ def main(args=None):
         twist_stamped.twist.angular.y = 0.0
         twist_stamped.twist.angular.z = 0.0
         pub.publish(twist_stamped)
-
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
         node.destroy_node()
         rclpy.shutdown()

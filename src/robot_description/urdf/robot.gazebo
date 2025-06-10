@@ -4,7 +4,7 @@
 <xacro:property name="body_color" value="Gazebo/Silver" />
 
 <gazebo reference="base_link">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
@@ -12,147 +12,147 @@
 </gazebo>
 
 <gazebo reference="left_wheel_link_2">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="right_wheel_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="camera_mount_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="vision_module_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="realsense_link">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="shoulder_link__1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="upper_arm_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="elbow_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="forearm_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="wrist_roll_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="wrist_pitch_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="claw_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="tool_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor2_wheel_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor2_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor1_wheel_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor1_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor4_wheel_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor4_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor3_wheel_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>
 </gazebo>
 
 <gazebo reference="castor3_link_1">
-  <material>${body_color}</material>
+  <material>Gazebo/Red</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
   <self_collide>true</self_collide>

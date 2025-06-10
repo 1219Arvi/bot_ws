@@ -46,6 +46,17 @@ def generate_launch_description():
                 ('/joint_states', '/joint_states_merged')
             ]
         ),
+        # Static joint state publisher GUI (remaps to /joint_states_gui)
+        Node(
+            package='joint_state_publisher_gui',
+            executable='joint_state_publisher_gui',
+            name='joint_state_publisher_gui',
+            output='screen',
+            remappings=[
+                ('/joint_states', '/joint_states_gui')
+            ],
+            parameters=[{'use_sim_time': True}]
+        ),
 
         # RViz2 Viewer
         Node(

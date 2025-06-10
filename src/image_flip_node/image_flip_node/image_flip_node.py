@@ -11,7 +11,7 @@ class ImageFlipThrottleNode(Node):
         # Parameters
         self.declare_parameter('input_topic', '/camera/depth/image_raw')
         self.declare_parameter('output_topic', '/flip_depth/image')
-        self.declare_parameter('rate', 3.0)  # Hz
+        self.declare_parameter('rate', 10.0)  # Hz
 
         self.input_topic = self.get_parameter('input_topic').get_parameter_value().string_value
         self.output_topic = self.get_parameter('output_topic').get_parameter_value().string_value

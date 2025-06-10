@@ -13,7 +13,7 @@ import xacro
 
 def generate_launch_description():
     # Load the world file
-    world_file_name = 'obstacles.world'
+    world_file_name = 'world.sdf'
     world_path = os.path.join(get_package_share_directory('bot'), 'worlds', world_file_name)
 
     # Include Gazebo launch
@@ -35,6 +35,7 @@ def generate_launch_description():
         'urdf',
         'robot.xacro'
     )
+
     doc = xacro.process_file(xacro_file)
     robot_description = {'robot_description': doc.toxml()}
 
@@ -43,7 +44,6 @@ def generate_launch_description():
         'config',
         'mapper_params_online_async.yaml'
     )
-
     # Start robot_state_publisher (remapped to merged joint states)
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
@@ -57,9 +57,10 @@ def generate_launch_description():
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        arguments=['-topic', 'robot_description', '-entity', 'base'],
+        arguments=['-topic', 'robot_description', '-entity', 'base', '-x', '0.5', '-y', '0', '-z', '0'],
         output='screen'
     )
+
 
     # Load joint state broadcaster after robot is spawned
     load_joint_state_broadcaster = ExecuteProcess(
@@ -73,16 +74,9 @@ def generate_launch_description():
         output='screen'
     )
 
-    # Static joint state publisher GUI (remaps to /joint_states_gui)
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui',
-        output='screen',
-        remappings=[
-            ('/joint_states', '/joint_states_gui')
-        ],
-        parameters=[{'use_sim_time': True}]
+    load_position_controller = ExecuteProcess(
+        cmd=['ros2', 'control', 'load_controller', '--set-state', 'active', 'position_controller'],
+        output='screen'
     )
 
     # Joint states merger node
@@ -111,7 +105,6 @@ def generate_launch_description():
 
     return LaunchDescription([
         gazebo,
-        joint_state_publisher_gui_node,
         joint_states_merger_node,
         node_robot_state_publisher,
         spawn_entity,
@@ -130,6 +123,12 @@ def generate_launch_description():
                 on_exit=[load_diff_drive_base_controller]
             )
         ),
+        RegisterEventHandler(
+            event_handler=OnProcessExit(
+                target_action=load_diff_drive_base_controller,
+                on_exit=[load_position_controller]
+            )
+        ),
         Node(
             package='image_flip_node',
             executable='image_flip',
@@ -146,7 +145,7 @@ def generate_launch_description():
                 'use_sim_time': True 
             }],
             remappings=[
-            ('depth', '/flip_depth/image'),  # From your image_flip_node
+            ('depth', '/camera/depth/image_raw'),  # From your image_flip_node
             ('depth_camera_info', '/camera/depth/camera_info'),
             ('scan', '/scan')  # slam_toolbox listens here
         ]
