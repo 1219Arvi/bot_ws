@@ -3,28 +3,16 @@ import rclpy
 from rclpy.qos import QoSProfile
 from geometry_msgs.msg import TwistStamped
 import sys, select, termios, tty
-from rclpy.time import Time
 
 settings = termios.tcgetattr(sys.stdin)
 
 msg = """
-Reading from the keyboard  and Publishing to TwistStamped on /diff_drive/cmd_vel!
----------------------------
-Moving around:
-   u    i    o
-   j    k    l
-   m    ,    .
-
-For Holonomic mode (strafing), hold down the shift key:
----------------------------
-   U    I    O
-   J    K    L
-   M    <    >
-
-t : up (+z)
-b : down (-z)
-
-anything else : stop
+Custom Teleop: Press keys to increment or decrement motion in specific directions.
+------------------------------------------------
+f: +Forward      v: -Forward
+l: +Turn Left    r: -Turn Left
+u: +Up (Z)       d: -Up (Z)
+s: STOP ALL MOTION
 
 q/z : increase/decrease max speeds by 10%
 w/x : increase/decrease only linear speed by 10%
@@ -33,34 +21,14 @@ e/c : increase/decrease only angular speed by 10%
 CTRL-C to quit
 """
 
-moveBindings = {
-    'i':(1,0,0,0),
-    'o':(1,0,0,-1),
-    'j':(0,0,0,1),
-    'l':(0,0,0,-1),
-    'u':(1,0,0,1),
-    ',':(-1,0,0,0),
-    '.':(-1,0,0,1),
-    'm':(-1,0,0,-1),
-    'O':(1,-1,0,0),
-    'I':(1,0,0,0),
-    'J':(0,1,0,0),
-    'L':(0,-1,0,0),
-    'U':(1,1,0,0),
-    '<':(-1,0,0,0),
-    '>':(-1,-1,0,0),
-    'M':(-1,1,0,0),
-    't':(0,0,1,0),
-    'b':(0,0,-1,0),
-}
 
-speedBindings={
-    'q':(1.1,1.1),
-    'z':(.9,.9),
-    'w':(1.1,1),
-    'x':(.9,1),
-    'e':(1,1.1),
-    'c':(1,.9),
+speedBindings = {
+    'q': (1.1, 1.1),
+    'z': (0.9, 0.9),
+    'w': (1.1, 1.0),
+    'x': (0.9, 1.0),
+    'e': (1.0, 1.1),
+    'c': (1.0, 0.9),
 }
 
 def getKey():
@@ -70,58 +38,78 @@ def getKey():
     termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
     return key
 
-def vels(speed,turn):
-    return "currently:\tspeed %s\tturn %s " % (speed,turn)
+def vels(speed, turn):
+    return "currently:\tspeed %.2f\tturn %.2f" % (speed, turn)
 
-def main(args=None):    
+def main(args=None):
     if args is None:
         args = sys.argv
 
     rclpy.init()
     node = rclpy.create_node('teleop_twist_keyboard')
-
     pub = node.create_publisher(TwistStamped, '/diff_drive_base_controller/cmd_vel', QoSProfile(depth=10))
 
     speed = 0.5
     turn = 1.0
-    x = 0
-    y = 0
-    z = 0
-    th = 0
+    x = 0.0
+    th = 0.0
+    z = 0.0
     status = 0
 
     try:
         print(msg)
-        print(vels(speed,turn))
+        print(vels(speed, turn))
         while rclpy.ok():
             key = getKey()
-            if key in moveBindings.keys():
-                x = moveBindings[key][0]
-                y = moveBindings[key][1]
-                z = moveBindings[key][2]
-                th = moveBindings[key][3]
-            elif key in speedBindings.keys():
-                speed = speed * speedBindings[key][0]
-                turn = turn * speedBindings[key][1]
 
-                print(vels(speed,turn))
-                if (status == 14):
-                    print(msg)
-                status = (status + 1) % 15
+            # Reset all axes before assigning new ones
+            prev_x = x
+            prev_th = th
+            prev_z = z
+
+            if key == 'f':     # Forward
+                x = 1.0
+            elif key == 'v':   # Backward
+                x = -1.0
+            elif key == 'l':   # Turn Left
+                th = 1.0
+            elif key == 'r':   # Turn Right
+                th = -1.0
+            elif key == 'u':   # Up
+                z = 1.0
+            elif key == 'd':   # Down
+                z = -1.0
+            elif key == 's':   # 🔴 STOP
+                x = 0.0
+                th = 0.0
+                z = 0.0
+                print("🛑 STOP issued: All velocities set to zero.")
+            elif key in speedBindings:
+                speed *= speedBindings[key][0]
+                turn *= speedBindings[key][1]
+                print(vels(speed, turn))
+                continue
+            elif key == '\x03':  # Ctrl+C
+                break
             else:
-                x = 0
-                y = 0
-                z = 0
-                th = 0
-                if (key == '\x03'):
-                    break
+                x = 0.0
+                th = 0.0
+                z = 0.0
+
+            # If any axis changed direction, override opposite
+            if x != prev_x and x != 0:
+                x = x
+            if th != prev_th and th != 0:
+                th = th
+            if z != prev_z and z != 0:
+                z = z
+                
 
             twist_stamped = TwistStamped()
             twist_stamped.header.stamp = node.get_clock().now().to_msg()
             twist_stamped.header.frame_id = 'base_link'
-
             twist_stamped.twist.linear.x = x * speed
-            twist_stamped.twist.linear.y = y * speed
+            twist_stamped.twist.linear.y = 0.0
             twist_stamped.twist.linear.z = z * speed
             twist_stamped.twist.angular.x = 0.0
             twist_stamped.twist.angular.y = 0.0
@@ -135,7 +123,6 @@ def main(args=None):
         twist_stamped = TwistStamped()
         twist_stamped.header.stamp = node.get_clock().now().to_msg()
         twist_stamped.header.frame_id = 'base_link'
-
         twist_stamped.twist.linear.x = 0.0
         twist_stamped.twist.linear.y = 0.0
         twist_stamped.twist.linear.z = 0.0
