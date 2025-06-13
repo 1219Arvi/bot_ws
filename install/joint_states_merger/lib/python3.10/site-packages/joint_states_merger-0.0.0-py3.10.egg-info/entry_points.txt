@@ -1,0 +1,3 @@
+[console_scripts]
+joint_states_merger = joint_states_merger.joint_states_merger:main
+
