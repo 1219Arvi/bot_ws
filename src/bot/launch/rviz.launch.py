@@ -5,31 +5,28 @@ import os
 import xacro
 
 def generate_launch_description():
-    # Path to your XACRO file
+    # === Process the Xacro file ===
     urdf_file = os.path.join(
-        get_package_share_directory('bot'),  
+        get_package_share_directory('bot'),
         'urdf',
         'robot.xacro'
     )
-
-    # Process the XACRO file to XML
     doc = xacro.process_file(urdf_file)
     robot_description_config = {'robot_description': doc.toxml()}
 
     return LaunchDescription([
-        # Joint States Merger Node
+
+        # Joint States Merger
         Node(
             package='joint_states_merger',
             executable='joint_states_merger',
             name='joint_states_merger',
             output='screen',
-            parameters=[
-                {
-                    'input_topics': ['/joint_states', '/joint_states_gui'],
-                    'output_topic': '/joint_states_merged',
-                    'use_sim_time': True
-                }
-            ]
+            parameters=[{
+                'input_topics': ['/joint_states', '/joint_states_gui'],
+                'output_topic': '/joint_states_merged',
+                'use_sim_time': True
+            }]
         ),
 
         # Robot State Publisher
@@ -38,34 +35,26 @@ def generate_launch_description():
             executable='robot_state_publisher',
             name='robot_state_publisher',
             output='screen',
-            parameters=[
-                robot_description_config,
-                {'use_sim_time': True}
-            ],
-            remappings=[
-                ('/joint_states', '/joint_states_merged')
-            ]
+            parameters=[robot_description_config, {'use_sim_time': True}],
+            remappings=[('/joint_states', '/joint_states_merged')]
         ),
-        # Static joint state publisher GUI (remaps to /joint_states_gui)
+
+        # GUI for manually manipulating joints
         Node(
             package='joint_state_publisher_gui',
             executable='joint_state_publisher_gui',
             name='joint_state_publisher_gui',
             output='screen',
-            remappings=[
-                ('/joint_states', '/joint_states_gui')
-            ],
+            remappings=[('/joint_states', '/joint_states_gui')],
             parameters=[{'use_sim_time': True}]
         ),
 
-        # RViz2 Viewer
+        # RViz Viewer
         Node(
             package='rviz2',
             executable='rviz2',
             name='rviz2',
             output='screen',
-            parameters=[
-                {'use_sim_time': True}
-            ]
+            parameters=[{'use_sim_time': True}],
         )
     ])
